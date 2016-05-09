@@ -1,63 +1,113 @@
-<!--
-Editor:               https://atom.io/
-Fonts:                http://www.google.com/fonts/specimen/Roboto+Slab
-                      https://github.com/FortAwesome/Font-Awesome
-Inspiration:          http://xpaw.me
-Video Source:         http://mazwai.com/
-
-Video Background:     http://demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video
-Vertikal Zentrieren:  http://www.olivergast.de/blog/2013/04/17/css-basics-ein-element-horizontal-und-vertikal-zentrieren-2/
-E-Mail vs. Spambot:   http://staticfloat.com/php-programmieren/e-mail-adresse-gegen-spambots-auf-webseite-schutzen/
-
-Von Markus Ritzmann erstellt am 12.03.2015.
-https://github.com/mritzmann/markus-mail.com
--->
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Markus Ritzmann</title>
-    <meta charset="ISO-8859-1"/>
-    <meta name="description" content="Informationen &uuml;ber Markus Ritzmann aus Turbenthal, Schweiz"/>
-    <meta name="author" content="Markus Ritzmann"/>
-    <meta name="keywords" content="Markus Ritzmann, Unterspitzwies, 8488 Turbenthal, Schweiz, weissertiger2, Neubrunn, Winterthur"/>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
-</head>
-<body>
-    <div id="content">
-        <p class="text titel">Hi, ich bin Markus.</p>
-        <p class="text slogan">Lernender Informatiker (Support) in Ausbildung. Schlendere h&auml;ufig durch das Internet und schreibe einen <a href="http://blog.markus-mail.com"><u>Blog</u></a>.</p>
-        <p class="text sozial_media">
-            <a href="http://url.markus-mail.com/twitter" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
-            <a href="http://url.markus-mail.com/gplus" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a>
-            <a href="http://url.markus-mail.com/fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
-            <a href="https://delicious.com/weissertiger2" target="_blank" title="Delicious"><i class="fa fa-delicious"></i></a>
-        </p>
-        <p class="text mail">moc.l<span style="display:none">dummy</span>iam-sukr<span style="display:none">dummy</span>am@ofni</p>
+    <title>Markus Ritzmann</title>
+    <meta name="description" content="Persönliche Webseite von Markus Ritzmann aus Turbenthal, Schweiz."/>
+    <meta name="keywords" content="Markus Ritzmann, Unterspitzwies, 8488 Turbenthal, Schweiz, weissertiger2, Neubrunn 745, Winterthur"/>
+    <meta name="author" content="Markus Ritzmann">
+
+    <!-- css files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Hallo, Ich heisse Markus!</h1>
+      </div>
+      <p class="lead">Lernender Informatiker (Support) in Ausbildung. Schlendere häufig durch das Internet und schreibe einen <a href="https://blog.markus-mail.com">Blog</a>.</p>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Kontakt</h3>
+        </div>
+        <div class="panel-body">
+          <a class="btn btn-default btn-sm" data-toggle="collapse" href="#email" aria-expanded="false" aria-controls="email"><i class="fa fa-envelope" aria-hidden="true"></i> E-Mail</a>
+          <a class="btn btn-default btn-sm" data-toggle="collapse" href="#adresse" aria-expanded="false" aria-controls="adresse"><i class="fa fa-home" aria-hidden="true"></i> Adresse</a>
+
+          <div class="collapse" id="email">
+            <div class="well">
+              <p><strong>kontakt-57315815@markus-mail.com</strong></p>
+              <p>Diese E-Mail-Adresse ist nur eine Woche lang gütig und verfällt anschliessend. Mails, die Du an diese Adresse sendest, werden (obwohl sie kryptisch aussieht) persönlich gelesen und beantwortet. Mit der Antwort erhälst Du eine dauerhaft gültige Adresse. Dieses Verfahren stellt sicher, dass Spammer, die Websites automatisiert nach E-Mail-Adressen «abgrasen», keine benutzbare Adresse zum Spammen vorfinden.</p>
+            </div>
+          </div>
+
+
+          <div class="collapse" id="adresse">
+            <div class="well">
+              <p><strong>Neubrunn 745, CH-8488 Turbenthal</strong></p>
+              <p>Selbstvertändlich mag niemand Spam. Ich auch nicht. Also halte dich daran!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Social Media</h3>
+        </div>
+        <div class="panel-body">
+          <a class="btn btn-default btn-sm" target="_blank" href="https://twitter.com/RitzmannMarkus"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+          <a class="btn btn-default btn-sm" target="_blank" href="https://plus.google.com/+MarkusRitzmann"><i class="fa fa-google-plus" aria-hidden="true"></i> Twitter</a>
+          <a class="btn btn-default btn-sm" target="_blank" href="https://www.facebook.com/ritzmann.markus"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+          <a class="btn btn-default btn-sm" target="_blank" href="https://www.snapchat.com/add/ri7zmann"><i class="fa fa-snapchat" aria-hidden="true"></i> Snapchat</a>
+          <a class="btn btn-default btn-sm" target="_blank" href="https://www.instagram.com/ritzmannm/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+          <a class="btn btn-default btn-sm" target="_blank" href="https://www.flickr.com/photos/weissertiger2/"><i class="fa fa-flickr" aria-hidden="true"></i> Flickr</a>
+          <a class="btn btn-default btn-sm" target="_blank" href="http://del.icio.us/weissertiger2"><i class="fa fa-delicious" aria-hidden="true"></i> Delicious</a>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Projekte</h3>
+        </div>
+        <div class="panel-body">
+          <a class="btn btn-default btn-sm" target="_blank" href="https://isp-blog.ch"><i class="fa fa-link" aria-hidden="true"></i> ISP-Blog.ch</a>
+          <a class="btn btn-default btn-sm" target="_blank" href="https://it-logbuch.ch"><i class="fa fa-link" aria-hidden="true"></i> IT-Logbuch.ch</a>
+          <a class="btn btn-default btn-sm" target="_blank" href="https://virenschutz.fail"><i class="fa fa-link" aria-hidden="true"></i> Virenschutz.fail</a>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Payment</h3>
+        </div>
+        <div class="panel-body">
+          <a class="btn btn-default btn-sm" target="_blank" href="https://www.paypal.me/ritzmann"><i class="fa fa-paypal" aria-hidden="true"></i> PayPal</a>
+          <a class="btn btn-default btn-sm" target="_blank" href="https://coinbase.com/ritzmann"><i class="fa fa-btc" aria-hidden="true"></i> Bitcoin</a>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Security</h3>
+        </div>
+        <div class="panel-body">
+          <a class="btn btn-default btn-sm" target="_blank" href="https://markus-mail.com/pgp.asc"><i class="fa fa-key" aria-hidden="true"></i> PGP</a>
+        </div>
+      </div>
+
+
     </div>
-    <div id="backgroundcredit">
-        <p class="text backgroundcredit">Background Video: <a href="https://vimeo.com/32439675" target="_blank">Matt Devir</a>, <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a></p>
-    </div>
-<video autoplay loop poster="assets/img/hintergrund.jpg" id="bgvid">
-    <source src="assets/video/video.webm" type="video/webm">
-    <source src="assets/video/video.mp4" type="video/mp4">
-</video>
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//stat.markus-mail.com/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 1]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//stat.markus-mail.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
-</body>
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+
+    <!-- javascript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
