@@ -1,0 +1,125 @@
+/* 
+    Hier gibt es nichts spannendes zu sehen. Ohne Witz! 
+    Kontakt: info (ringelschwanz) markus-mail.com
+*/
+
+html body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body
+{
+    background-image: url(../img/hintergrund1.jpg); /* Eigentümer des Fotos: Markus Ritzmann */
+    background-size: 100% auto; /* Hintergrund wird auf breite des Browserfensters skaliert */
+    background-color: #808080;
+}
+
+#content
+{
+    position: relative;
+    margin: 100px auto 0px auto;
+    padding: 0px;
+    width: 700px;   
+    height: auto;
+    background-color: transparent;
+}
+
+#content p
+{
+    font-family: 'League Gothic', Arial, sans-serif;
+    font-size: 30px;
+    color: white;  
+    text-transform: uppercase;  
+    font-weight: bold;
+}
+
+#content .links
+{
+    display: inline;
+    color: #000000;
+}
+
+#content .rechts
+{  
+    display: inline;
+    color: #FFFFFF;     
+}
+
+#content .sozial-media-icon
+{
+    display: inline;
+    color: #FFFFFF;
+    font-size: 120px;
+}
+
+
+#content a:link
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#content a:visited
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#content a:hover
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+#name
+{
+    position: absolute;  
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+    top: 227px;
+    left: -90px;
+    white-space:nowrap;
+    cursor: default;
+}
+
+#name p 
+{
+    font-family: 'League Gothic', Arial, sans-serif;
+    font-size: 70px;  
+    line-height: 70px;
+    text-transform: uppercase;
+    color: white;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+}
+
+#name span
+{
+    opacity: 0;
+    color: #000000;
+    text-align: right;
+}
+
+#name p:hover span
+{
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+}
+
+pre 
+{
+    color: #FFFFFF;
+    font-size: 18px;
+    
+}
