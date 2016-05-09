@@ -9,9 +9,28 @@ html, body
 body
 {
     background-color: #808080;
-    background-image: url(../img/hintergrund.jpg);
     background-size: cover;
 }
+
+/* link decoration */
+
+a:link
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: white;
+}
+
+a:hover
+{
+    color: black;
+}
+
+/* divs */
 
 #content
 {
@@ -23,6 +42,19 @@ body
     margin-left: -500px;
     margin-top: -250px;
 }
+
+#backgroundcredit
+{
+    position: absolute;
+    width: 400px;
+    height: 21px;
+    bottom: 30px;
+    left: 30px;
+    margin-left: ;
+    margin-top: ;
+}
+
+/* classes */
 
 .text
 {
@@ -60,23 +92,24 @@ body
     font-size: 34px;
     text-align: center;
     margin: 0px;
-    padding: 0px; 
-    unicode-bidi: bidi-override;    /* Spam Schutz http://staticfloat.com/php-programmieren/e-mail-adresse-gegen-spambots-auf-webseite-schutzen/ */
-    direction: rtl;                 /* Spam Schutz http://staticfloat.com/php-programmieren/e-mail-adresse-gegen-spambots-auf-webseite-schutzen/ */   
+    padding: 0px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
 
-a:link
+.backgroundcredit
 {
-    color: white;
-    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
 }
 
-a:visited
-{
-    color: white;
-}
+/* Background Video */
 
-a:hover
+video#bgvid
 {
-    color: black;
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
 }
