@@ -30,3 +30,10 @@ body {
 .container .text-muted {
   margin: 20px 0;
 }
+
+/* http://staticfloat.com/php-programmieren/e-mail-adresse-gegen-spambots-auf-webseite-schutzen/ */
+
+.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
