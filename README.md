@@ -1,3 +1,3 @@
-# markus-mail.com
+# markusritzmann.ch
 
-Neue Webseite
+Personal Website
