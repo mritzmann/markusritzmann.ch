@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Markus Ritzmann</title>
-    <meta name="description" content="Persönliche Webseite von Markus Ritzmann aus Turbenthal, Schweiz."/>
-    <meta name="keywords" content="Markus Ritzmann, Unterspitzwies, 8488 Turbenthal, Schweiz, weissertiger2, Neubrunn 745, Winterthur"/>
+    <meta name="description" content="Persönliche Webseite von Markus Ritzmann aus Winterthur, Schweiz."/>
+    <meta name="keywords" content="Markus Ritzmann, Winterthur, Schweiz, Informatiker, DNSzensur"/>
     <meta name="author" content="Markus Ritzmann">
 
     <link rel="stylesheet" href="css/awsm.min.css">
@@ -87,10 +87,38 @@ LTC: LTUgEEhdVXyTtj8TfU6qjd6o6fYaec8K4N</code></pre>
         </dd>
       </dl>
     </main>
-    <!-- Piwik -->
+
+    <!-- structured data
+    Validator: https://search.google.com/structured-data/testing-tool -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Markus Ritzmann",
+        "birthDate": "1995-12-27",
+        "url": "https://markusritzmann.ch/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Eduard-Steiner-Strasse 11",
+          "addressLocality": "Winterthur",
+          "postalCode": "8400",
+          "addressCountry": "Switzerland"
+        },
+        "sameAs": [
+          "https://twitter.com/RitzmannMarkus/",
+          "https://github.com/mritzmann/"
+        ]
+      }
+    </script>
+
+    <!-- Matomo ist so konfiguriert, dass...
+    * Do-Not-Track beruecksichtigt wird.
+    * nicht die gesammte IP-Adresse gespeichert wird.
+    * Keine Tracking-Cookies gesetzt werden. -->
     <script type="text/javascript">
       var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["disableCookies"]);
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
       (function() {
@@ -101,6 +129,6 @@ LTC: LTUgEEhdVXyTtj8TfU6qjd6o6fYaec8K4N</code></pre>
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
-    <!-- End Piwik Code -->
+
   </body>
 </html>
