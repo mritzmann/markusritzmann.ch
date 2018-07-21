@@ -1,6 +1,6 @@
 # markusritzmann.ch
 
-Personal Website
+Personal Website. Build with [awsm.css](https://github.com/igoradamenko/awsm.css).
 
 ## Automatic deploys
 
