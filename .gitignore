@@ -8,3 +8,4 @@
 /.zcompdump-*
 /.ssh/*
 /cnf/nginx-*.conf
+/tmp/*
