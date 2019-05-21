@@ -1,0 +1,15 @@
+stages:
+  - deploy
+  - test
+
+deploy:
+  stage: deploy
+  script:
+  - apt-get update
+  - apt -qqy install openssh-client rsync
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_KEY")
+  - mkdir -p ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  - rsync --recursive --archive ./ ${SSH_HOST}:~
+  - ssh ${SSH_HOST} 'sudo /usr/sbin/service nginx reload'
