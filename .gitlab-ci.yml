@@ -6,10 +6,19 @@ deploy:
   stage: deploy
   script:
   - apt-get update
-  - apt -qqy install openssh-client rsync
+  - apt-get install openssh-client rsync
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SSH_KEY")
   - mkdir -p ~/.ssh
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
   - rsync --recursive --archive ./ ${SSH_HOST}:~
   - ssh ${SSH_HOST} 'sudo /usr/sbin/service nginx reload'
+
+# https://securitytxt.org
+securitytxt:
+  stage: test
+  script:
+  - apt-get update
+  - apt-get install wget
+  - wget https://markusritzmann.ch/security.txt
+  - wget https://markusritzmann.ch/.well-known/security.txt
