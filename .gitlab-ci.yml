@@ -14,4 +14,4 @@ deploy:
   - rsync --recursive --archive ./ ${SSH_HOST}:~
   - ssh ${SSH_HOST} 'sudo /usr/sbin/service nginx reload'
 
-include: tests/*.yml
+include: tests/securityheaders.yml
