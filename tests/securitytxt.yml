@@ -1,0 +1,8 @@
+# https://securitytxt.org
+securitytxt:
+  stage: test
+  script:
+  - apt-get update
+  - apt-get install wget
+  - wget https://markusritzmann.ch/security.txt
+  - wget https://markusritzmann.ch/.well-known/security.txt
