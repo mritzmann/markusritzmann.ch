@@ -2,6 +2,7 @@ redirect:
   stage: test
   image: debian:latest
   variables:
+    GIT_STRATEGY: none
     KEYWORD: E-Mail
   script:
   - apt update
