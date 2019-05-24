@@ -4,9 +4,10 @@ stages:
 
 deploy:
   stage: deploy
+  image: debian:latest
   script:
-  - apt-get update
-  - apt-get install openssh-client rsync
+  - apt update
+  - apt -y install openssh-client rsync
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SSH_KEY")
   - mkdir -p ~/.ssh
@@ -14,11 +15,6 @@ deploy:
   - rsync --recursive --archive ./ ${SSH_HOST}:~
   - ssh ${SSH_HOST} 'sudo /usr/sbin/service nginx reload'
 
-# https://securitytxt.org
-securitytxt:
-  stage: test
-  script:
-  - apt-get update
-  - apt-get install wget
-  - wget https://markusritzmann.ch/security.txt
-  - wget https://markusritzmann.ch/.well-known/security.txt
+include:
+  - tests/securitytxt.yml
+  - tests/securityheaders.yml

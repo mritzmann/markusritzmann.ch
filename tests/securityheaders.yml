@@ -1,0 +1,10 @@
+# https://securityheaders.com
+securityheaders:
+  stage: test
+  image: debian:latest
+  variables:
+    URL: https://markusritzmann.ch/
+  script:
+  - apt update
+  - apt -y install curl grep cowsay
+  - ./tests/securityheaders.sh $URL
