@@ -3,7 +3,6 @@ securityheaders:
   stage: test
   image: debian:latest
   variables:
-    GIT_STRATEGY: none
     URL: https://markusritzmann.ch/
   script:
   - apt update
