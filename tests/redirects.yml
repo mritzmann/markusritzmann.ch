@@ -1,0 +1,27 @@
+redirect:
+  stage: test
+  image: debian:latest
+  variables:
+    GIT_STRATEGY: none
+    KEYWORD: E-Mail
+  script:
+  - apt update
+  - apt -y install curl grep
+  # markusritzmann.ch
+  - export FQDN=markusritzmann.ch
+  - curl --silent --location https://${FQDN} | grep $KEYWORD
+  - curl --silent --location http://${FQDN} | grep $KEYWORD
+  - curl --silent --location https://www.${FQDN} | grep $KEYWORD
+  - curl --silent --location http://www.${FQDN} | grep $KEYWORD
+  # markus-mail.com
+  - export FQDN=markus-mail.com
+  - curl --silent --location https://${FQDN} | grep $KEYWORD
+  - curl --silent --location http://${FQDN} | grep $KEYWORD
+  - curl --silent --location https://www.${FQDN} | grep $KEYWORD
+  - curl --silent --location http://www.${FQDN} | grep $KEYWORD
+  # cloud42.ch
+  - export FQDN=cloud42.ch
+  - curl --silent --location https://${FQDN} | grep $KEYWORD
+  - curl --silent --location http://${FQDN} | grep $KEYWORD
+  - curl --silent --location https://www.${FQDN} | grep $KEYWORD
+  - curl --silent --location http://www.${FQDN} | grep $KEYWORD
