@@ -1,8 +1,9 @@
 # https://securitytxt.org
 securitytxt:
   stage: test
+  image: debian:latest
   script:
-  - apt-get update
-  - apt-get install wget
+  - apt update
+  - apt -y install wget
   - wget https://markusritzmann.ch/security.txt
   - wget https://markusritzmann.ch/.well-known/security.txt

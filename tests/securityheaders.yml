@@ -1,0 +1,21 @@
+# https://securityheaders.com
+securityheaders:
+  stage: test
+  image: debian:latest
+  variables:
+  - URL: https://markusritzmann.ch/
+  script:
+  - apt update
+  - apt -y install curl grep
+  # prevent duplicate entry
+  - if [ "$(curl --head --silent $URL | cut -d ":" -f1 | uniq --count --ignore-case --repeated | wc --line)" -eq 0 ] ; then echo ok ; else echo exit 1; fi
+  # Content-Security-Policy
+  - curl --head --silent $URL | grep --ignore-case Content-Security-Policy
+  # X-Frame-Options
+  - curl --head --silent $URL | grep --ignore-case X-Frame-Options
+  # X-Xss-Protection
+  - curl --head --silent $URL | grep --ignore-case X-Xss-Protection
+  # Referrer-Policy
+  - curl --head --silent $URL | grep --ignore-case Referrer-Policy
+  # X-Content-Type-Options
+  - curl --head --silent $URL | grep --ignore-case X-Content-Type-Options
