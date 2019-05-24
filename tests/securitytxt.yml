@@ -2,6 +2,8 @@
 securitytxt:
   stage: test
   image: debian:latest
+  variables:
+    GIT_STRATEGY: none
   script:
   - apt update
   - apt -y install wget
