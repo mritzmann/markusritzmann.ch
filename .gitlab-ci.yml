@@ -20,3 +20,4 @@ include:
   - tests/securityheaders.yml
   - tests/redirects.yml
   - tests/dns.yml
+  - tests/ssllabs.yml
