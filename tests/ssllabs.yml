@@ -9,4 +9,4 @@ ssllabs:
     FQDN: markusritzmann.ch
   script:
   - docker pull essentialkaos/sslcli:latest
-  - docker run --rm -it essentialkaos/sslcli:latest --perfect $FQDN
+  - docker run essentialkaos/sslcli:latest --perfect $FQDN
