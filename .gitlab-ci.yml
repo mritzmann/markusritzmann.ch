@@ -19,3 +19,4 @@ include:
   - tests/securitytxt.yml
   - tests/securityheaders.yml
   - tests/redirects.yml
+  - tests/dns.yml
