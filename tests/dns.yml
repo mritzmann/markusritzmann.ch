@@ -23,3 +23,5 @@ dns:
   - curl --silent "https://dns.google.com/resolve?name=fm1._domainkey.${FQDN}&type=CNAME" | jq '.Answer[0].name' | grep 'fm1._domainkey.markusritzmann.ch.'
   - curl --silent "https://dns.google.com/resolve?name=fm2._domainkey.${FQDN}&type=CNAME" | jq '.Answer[0].name' | grep 'fm2._domainkey.markusritzmann.ch.'
   - curl --silent "https://dns.google.com/resolve?name=fm3._domainkey.${FQDN}&type=CNAME" | jq '.Answer[0].name' | grep 'fm3._domainkey.markusritzmann.ch.'
+  # DNSSEC
+  - curl --silent "https://dns.google.com/resolve?name=${FQDN}&type=A" | jq '.AD' | grep 'true'
