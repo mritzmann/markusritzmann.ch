@@ -8,9 +8,9 @@ dns:
   - apt update
   - apt -y install curl jq grep
   # apex: A
-  - curl --silent "https://dns.google.com/resolve?name=${FQDN}&type=A" | jq '.Answer[0].data' | grep '185.17.70.108'
+  - curl --silent "https://dns.google.com/resolve?name=${FQDN}&type=A" | jq '.Answer[0].data' | grep '95.216.100.102'
   # apex: AAAA
-  - curl --silent "https://dns.google.com/resolve?name=${FQDN}&type=AAAA" | jq '.Answer[0].data' | grep '2a04:503:0:1008::108'
+  - curl --silent "https://dns.google.com/resolve?name=${FQDN}&type=AAAA" | jq '.Answer[0].data' | grep '2a01:4f9:2b:1399::2'
   # apex: CAA
   - curl --silent "https://dns.google.com/resolve?name=${FQDN}&type=CAA" | jq '.Answer' | grep 'letsencrypt'
   # apex: MX
