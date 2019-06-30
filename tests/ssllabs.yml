@@ -6,7 +6,6 @@ ssllabs:
   - docker:dind
   variables:
     GIT_STRATEGY: none
-    FQDN: markusritzmann.ch
   script:
   - docker pull essentialkaos/sslcli:latest
   - docker run essentialkaos/sslcli:latest --perfect $FQDN

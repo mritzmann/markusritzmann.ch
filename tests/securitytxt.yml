@@ -7,5 +7,5 @@ securitytxt:
   script:
   - apt update
   - apt -y install wget
-  - wget https://markusritzmann.ch/security.txt
-  - wget https://markusritzmann.ch/.well-known/security.txt
+  - wget https://${FQDN}/security.txt
+  - wget https://${FQDN}/.well-known/security.txt

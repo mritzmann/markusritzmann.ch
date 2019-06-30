@@ -1,0 +1,11 @@
+# https://developers.google.com/speed/pagespeed/insights/
+# https://github.com/addyosmani/psi
+pagespeed:
+  stage: test
+  image: node:12-stretch
+  variables:
+    GIT_STRATEGY: none
+  script:
+  - npm install --global psi
+  - psi https://${FQDN}/ --threshold 90 --strategy mobile
+  - psi https://${FQDN}/ --threshold 90 --strategy desktop
