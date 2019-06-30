@@ -2,6 +2,9 @@ stages:
   - deploy
   - test
 
+variables:
+  FQDN: markusritzmann.ch
+
 deploy:
   stage: deploy
   image: debian:latest
@@ -21,3 +24,4 @@ include:
   - tests/redirects.yml
   - tests/dns.yml
   - tests/ssllabs.yml
+  - tests/pagespeed.yml

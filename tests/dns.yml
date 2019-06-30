@@ -3,7 +3,6 @@ dns:
   image: debian:latest
   variables:
     GIT_STRATEGY: none
-    FQDN: markusritzmann.ch
   script:
   - apt update
   - apt -y install curl jq grep
