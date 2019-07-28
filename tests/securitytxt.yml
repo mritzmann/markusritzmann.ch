@@ -6,6 +6,6 @@ securitytxt:
     GIT_STRATEGY: none
   script:
   - apt update
-  - apt -y install wget
-  - wget https://${FQDN}/security.txt
-  - wget https://${FQDN}/.well-known/security.txt
+  - apt -y install curl
+  - curl --silent https://${FQDN}/security.txt | grep Contact
+  - curl --silent https://${FQDN}/.well-known/security.txt | grep Contact
