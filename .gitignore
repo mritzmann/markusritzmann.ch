@@ -9,3 +9,4 @@
 /.ssh/*
 /cnf/nginx-*.conf
 /tmp/*
+/backup/*
