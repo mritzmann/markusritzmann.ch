@@ -19,10 +19,9 @@ deploy:
   - ssh ${SSH_HOST} 'sudo /usr/sbin/service nginx reload'
 
 include:
-#  - tests/securitytxt.yml
-#  - tests/securityheaders.yml
-#  - tests/redirects.yml
-#  - tests/dns.yml
-#  - tests/ssllabs.yml
-#  - tests/pagespeed.yml
-  - tests/whois.yml
+  - tests/securitytxt.yml
+  - tests/securityheaders.yml
+  - tests/redirects.yml
+  - tests/dns.yml
+  - tests/ssllabs.yml
+  - tests/pagespeed.yml
