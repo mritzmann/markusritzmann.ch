@@ -25,3 +25,4 @@ include:
   - tests/dns.yml
   - tests/ssllabs.yml
   - tests/pagespeed.yml
+  - tests/whois.yml
