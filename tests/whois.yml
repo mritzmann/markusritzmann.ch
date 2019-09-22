@@ -9,7 +9,10 @@ whois:
   # I'm not sure exactly what the problem is, but without ntp i get the following error when i use whois:
   # > getaddrinfo(whois.nic.ch): Servname not supported for ai_socktype
   - apt -y install ntp
-  # monitor contact
+# debugg
+  - echo $fqdn
+  - whois test.ch
+# monitor contact
   - content=$(whois ${FQDN} | grep contact -A4)
   - echo $content | grep "Markus Ritzmann"
   - echo $content | grep "Eduard-Steiner-Strasse 11"
