@@ -2,6 +2,7 @@
 ssllabs:
   stage: test
   image: docker:latest
+  retry: 1
   services:
   - docker:dind
   variables:
