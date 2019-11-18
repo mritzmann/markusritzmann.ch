@@ -3,7 +3,7 @@
 pagespeed:
   stage: test
   image: node:12-stretch
-  retry: 1
+  retry: 2
   variables:
     GIT_STRATEGY: none
   script:
