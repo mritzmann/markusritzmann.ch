@@ -7,6 +7,6 @@ securityheaders:
   - apt update
   - apt -y install curl grep
   # check if hsts header exist
-  - curl -I --silent https://${FQDN}/ | grep "strict-transport-security: max-age=63072000; includeSubDomains; preload"
+  - 'curl --head --silent https://${FQDN}/ | grep "strict-transport-security: max-age=63072000; includeSubDomains; preload"'
   # check if hsts preload status has changes
   - curl --silent https://hstspreload.com/api/v1/status/${FQDN} | grep '{"domain":"markusritzmann.ch","chrome":null,"firefox":null,"tor":null}'
