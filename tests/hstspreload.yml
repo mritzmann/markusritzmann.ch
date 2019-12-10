@@ -1,6 +1,6 @@
 # https://hstspreload.org
 # https://hstspreload.com
-securityheaders:
+hstspreload:
   stage: test
   image: debian:latest
   script:
