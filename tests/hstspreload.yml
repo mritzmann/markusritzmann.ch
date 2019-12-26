@@ -5,8 +5,10 @@ hstspreload:
   image: debian:latest
   script:
   - apt update
-  - apt -y install curl grep
+  - apt -y install curl grep jq
   # check if hsts header exist
   - 'curl --head --silent https://${FQDN}/ | grep "strict-transport-security: max-age=63072000; includeSubDomains; preload"'
-  # check if hsts preload status has changes
-  - curl --silent https://hstspreload.com/api/v1/status/${FQDN} | grep '{"domain":"markusritzmann.ch","chrome":null,"firefox":null,"tor":null}'
+  # chrome: check hsts preload status
+  - curl --silent https://hstspreload.com/api/v1/status/${FQDN} | jq .chrome.present | grep true
+  # firefox: check hsts preload status
+  - curl --silent https://hstspreload.com/api/v1/status/${FQDN} | jq .firefox.present | grep null
