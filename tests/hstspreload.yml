@@ -11,4 +11,4 @@ hstspreload:
   # chrome: check hsts preload status
   - curl --silent https://hstspreload.com/api/v1/status/${FQDN} | jq .chrome.present | grep true
   # firefox: check hsts preload status
-  - curl --silent https://hstspreload.com/api/v1/status/${FQDN} | jq .firefox.present | grep null
+  - curl --silent https://hstspreload.com/api/v1/status/${FQDN} | jq .firefox.present | grep true
