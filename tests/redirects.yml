@@ -19,9 +19,3 @@ redirect:
   - curl --silent --location http://${FQDN} | grep $KEYWORD
   - curl --silent --location https://www.${FQDN} | grep $KEYWORD
   - curl --silent --location http://www.${FQDN} | grep $KEYWORD
-  # cloud42.ch
-  - export FQDN=cloud42.ch
-  - curl --silent --location https://${FQDN} | grep $KEYWORD
-  - curl --silent --location http://${FQDN} | grep $KEYWORD
-  - curl --silent --location https://www.${FQDN} | grep $KEYWORD
-  - curl --silent --location http://www.${FQDN} | grep $KEYWORD
