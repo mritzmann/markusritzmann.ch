@@ -17,9 +17,9 @@ dns:
   # apex: TXT (SPF)
   - curl --silent "https://dns.google.com/resolve?name=${FQDN}&type=TXT" | jq '.Answer' | grep 'spf1 include:spf.messagingengine.com -all'
   # www: A
-  - curl --silent "https://dns.google.com/resolve?name=www.${FQDN}&type=A" | jq '.Answer[0].data' | grep '185.17.70.108'
+  - curl --silent "https://dns.google.com/resolve?name=www.${FQDN}&type=A" | jq '.Answer[0].data' | grep '185.17.71.11'
   # www: AAAA
-  - curl --silent "https://dns.google.com/resolve?name=www.${FQDN}&type=AAAA" | jq '.Answer[0].data' | grep '2a04:503:0:1008::108'
+  - curl --silent "https://dns.google.com/resolve?name=www.${FQDN}&type=AAAA" | jq '.Answer[0].data' | grep '2a04:503:0:1015::11'
   # DKIM
   - curl --silent "https://dns.google.com/resolve?name=fm1._domainkey.${FQDN}&type=CNAME" | jq '.Answer[0].name' | grep 'fm1._domainkey.markusritzmann.ch.'
   - curl --silent "https://dns.google.com/resolve?name=fm2._domainkey.${FQDN}&type=CNAME" | jq '.Answer[0].name' | grep 'fm2._domainkey.markusritzmann.ch.'
