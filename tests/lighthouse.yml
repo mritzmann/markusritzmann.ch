@@ -2,4 +2,4 @@ image: cypress/browsers:node10.16.0-chrome77
 lighthouse:
   script:
     - npm install -g @lhci/cli@0.4.x
-    - lhci autorun --upload.target=temporary-public-storage --collect.url="${FQDN}" --collect.settings.chromeFlags="--no-sandbox" || echo "LHCI failed!"
+    - lhci autorun --upload.target=temporary-public-storage --collect.settings.chromeFlags="--no-sandbox" || echo "LHCI failed!"
