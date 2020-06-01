@@ -26,3 +26,4 @@ include:
   - tests/ssllabs.yml
   - tests/pagespeed.yml
   - tests/hstspreload.yml
+  - tests/lighthouse.yml
