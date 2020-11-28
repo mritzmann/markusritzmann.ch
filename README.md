@@ -1,6 +1,6 @@
 # markusritzmann.ch
 
-Personal Website. Build with [awsm.css](https://github.com/igoradamenko/awsm.css).
+Personal Website. Build with [water.css](https://watercss.kognise.dev/).
 
 ## Automatic deploys
 
