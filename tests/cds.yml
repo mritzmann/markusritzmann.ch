@@ -1,0 +1,9 @@
+# https://www.nic.ch/security/cds/index.html
+cds:
+  stage: test
+  image: debian:latest
+  script:
+  - apt-get update
+  - apt-get -y install curl grep
+  # no CDS record should be present
+  - 'curl --silent https://registrar.nic.ch/reg/services/cds/${FQDN} | grep "No CDS records were found"'
