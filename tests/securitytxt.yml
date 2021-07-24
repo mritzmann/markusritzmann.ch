@@ -9,3 +9,4 @@ securitytxt:
   - apt -y install curl
   - curl --silent https://${FQDN}/security.txt | grep Contact
   - curl --silent https://${FQDN}/.well-known/security.txt | grep Contact
+  - curl --silent https://github.com/mritzmann.gpg | grep "4BhSreEGjQhd9bq8rd5tdIa4noGnx4M5MruIlC94NjPZOHGX9xvpPhcl6LW96bTY"
