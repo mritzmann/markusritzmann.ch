@@ -1,3 +1,2 @@
 Contact: https://markusritzmann.ch
-Encryption: https://github.com/mritzmann.gpg
 Preferred-Languages: de, en
