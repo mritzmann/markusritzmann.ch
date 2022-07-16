@@ -10,3 +10,8 @@
 /cnf/nginx-*.conf
 /tmp/*
 /backup/*
+/.bash_profile
+/.bashrc
+/.ondirrc
+/.zshenv
+/cnf/README
