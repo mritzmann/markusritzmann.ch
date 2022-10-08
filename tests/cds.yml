@@ -1,9 +1,15 @@
 # https://www.nic.ch/security/cds/index.html
 cds:
   stage: test
-  image: debian:latest
+  image: alpine:latest
   script:
-  - apt-get update
-  - apt-get -y install curl grep
-  # no CDS record should be present
-  - 'curl --silent https://registrar.nic.ch/reg/services/cds/${FQDN} | grep "No CDS records were found"'
+  - apk add curl grep jq
+  # get cds status
+  - export CDS=$(curl --silent https://registrar.nic.ch/reg/services/cds/${FQDN})
+  # display cds status
+  - echo $CDS | jq .
+  # stateValue should be "ACTIVE"
+  - echo $CDS | jq .cdsInfo | jq .stateValue | grep ACTIVE
+  # candidateValue should be set to the following values
+  - echo $CDS | jq .cdsInfo | jq .candidateValue | grep DEF79CEEE71326B644B1BFF942FC55296304C56F70A8E96AF9046E5A0C18C73A
+  - echo $CDS | jq .cdsInfo | jq .candidateValue | grep 8FCE7767A7CA0C1B6CE729D3F1B8A9E50C1B992195A5658D7848E3CF05EE52360D46BB9655C0254A6946CBCC54784746
