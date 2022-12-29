@@ -24,6 +24,5 @@ include:
   - tests/redirects.yml
   - tests/dns.yml
   - tests/ssllabs.yml
-  - tests/hstspreload.yml
   - tests/lighthouse.yml
   - tests/cds.yml
