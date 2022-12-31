@@ -3,71 +3,129 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Markus Ritzmann</title>
-  <meta name="description" content="Persönliche Webseite von Markus Ritzmann aus Winterthur, Schweiz." />
-  <meta name="keywords" content="Markus Ritzmann, Winterthur, Schweiz, Informatiker, DNSzensur" />
+  <meta name="description" content="Website von Markus Ritzmann. Zürich, Schweiz.">
   <meta name="author" content="Markus Ritzmann">
 
-  <link rel="stylesheet" href="css/water.min.css?v2.1.1">
+  <link href="assets/bootstrap.min.css?5.3.0-alpha1" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <style>
+    .container {
+      max-width: 680px;
+    }
+
+    footer {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Hi I&rsquo;m Markus</h1>
-    <p>Real Life lvl. 27. Lang.: de/en</p>
+  <main>
+    <div class="container">
 
-    <h2>📧 E-Mail</h2>
-    <p>
-      kontakt-57315815<span style="display:none">dummy</span>@mar<span style="display:none">dummy</span>kus-mail.com
-    </p>
+      <h1 class="mt-5">Hi I&rsquo;m Markus 👋🏻</h1>
+      <p class="lead">Real Life lvl. 27. Lang.: de/en</p>
 
-    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-      D25D BB0D 0864 C369 6CC1 2B84 69FE 2C16 9CA9 1A77<footer><cite><a href="https://github.com/mritzmann.gpg">PGP Key</a></cite></footer>
-    </blockquote>
+      <div class="accordion" id="accordionMain">
 
-    <h2>💬 Social Media</h2>
-    <ul>
-      <li><a rel="me" href="https://twitter.com/RitzmannMarkus">Twitter</a></li>
-      <li><a rel="me" href="https://mastodon.social/@markusr">Mastodon</a></li>
-      <li><a rel="me" href="https://www.instagram.com/ritzmannm/">Instagram</a></li>
-      <li><a rel="me" href="https://github.com/mritzmann">GitHub</a></li>
-      <li><a rel="me" href="https://gitlab.com/mritzmann">GitLab</a></li>
-      <li><a rel="me" href="https://www.linkedin.com/in/ritzmannmarkus">LinkedIn</a></li>
-    </ul>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAbae3">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbae3"
+              aria-expanded="true" aria-controls="collapseAbae3">
+              Kontakt
+            </button>
+          </h2>
+          <div id="collapseAbae3" class="accordion-collapse collapse show" aria-labelledby="headingAbae3"
+            data-bs-parent="#accordionMain">
+            <div class="accordion-body">
+              <p>Du erreichst mich am einfachsten per E-Mail oder atrlternativ via soziale Medien.</p>
+              <p>kontakt-57315815<span style="display:none">dummy</span>@mar<span
+                  style="display:none">dummy</span>kus-mail.com</p>
+              <div class="d-grid gap-2 d-md-block">
+                <a rel="me" class="btn btn-primary" href="https://mastodon.social/@markusr" role="button">Mastodon</a>
+                <a rel="me" class="btn btn-primary" href="https://twitter.com/RitzmannMarkus" role="button">Twitter</a>
+                <a rel="me" class="btn btn-primary" href="https://www.linkedin.com/in/ritzmannmarkus" role="button">LinkedIn</a>
+                <a rel="me" class="btn btn-secondary" href="https://github.com/mritzmann" role="button">GitHub</a>
+                <a rel="me" class="btn btn-secondary" href="https://gitlab.com/mritzmann" role="button">GitLab</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <h2>🐹 Leisure Time</h2>
-    <ul>
-      <li><a href="https://asvt.ch/">ASV Turbenthal</a></li>
-      <li><a href="https://zkav.ch/">ZKAV Zürich</a></li>
-      <li><a href="https://1drv.ms/u/s!Asm_LcKSLhtBgaV7HioU9PDKXLv_ZQ?e=Hg8Rdp">Djungarian hamster</a></li>
-    </ul>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingUth4e">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseUth4e" aria-expanded="false" aria-controls="collapseUth4e">
+              Armbrust
+            </button>
+          </h2>
+          <div id="collapseUth4e" class="accordion-collapse collapse" aria-labelledby="headingUth4e"
+            data-bs-parent="#accordionMain">
+            <div class="accordion-body">
+              <p>
+                In meiner Freizeit schiesse ich <a href="https://en.wikipedia.org/wiki/Match_crossbow">Matcharmbrust</a> und engagiere mich in einem Armbrustschützenverein.
+                Als Schützenmeister organisiere ich die Teilnahme von Vereinsmitgliedern an regionalen, kantonalen und eidgenössischen Wettkämpfen.
+              </p>
+              <a class="btn btn-primary" href="https://asvt.ch" role="button">asvt.ch</a>
+              <a class="btn btn-primary" href="https://zkav.ch" role="button">zkav.ch</a>
+              <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Match_crossbow" role="button">Wikipedia</a>
+            </div>
+          </div>
+        </div>
 
-    <h2>👨‍💻 Tiny Projects</h2>
-    <ul>
-      <li><a href="https://api42.ch/">api42.ch</a></li>
-      <li><a href="https://man-api.ch/">man-api.ch</a></li>
-    </ul>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingKah7k">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseKah7k" aria-expanded="false" aria-controls="collapseKah7k">
+              Zugreisen
+            </button>
+          </h2>
+          <div id="collapseKah7k" class="accordion-collapse collapse" aria-labelledby="headingKah7k"
+            data-bs-parent="#accordionMain">
+            <div class="accordion-body">
+              <p>
+                Ich besitze ein <a href="https://de.wikipedia.org/wiki/Generalabonnement">Generalabonnement (GA)</a>,
+                was mir erlaubt den kompletten öffentlichen Verkehr in der Schweiz zu nutzen.
+                Um mir selbst die Kosten zu rechtfertigen, habe ich es mir zum Ziel gesetzt, häufiger Bahn zu fahren.
+                Daraus entstand eine Karte gefahrener Zugstrecken. Die Karte wird laufend ergänzt.
+              </p>
+              <a class="btn btn-primary" href="https://umap.openstreetmap.fr/de/map/railway-map_780152"
+                role="button">OpenStreetMap (uMap)</a>
+            </div>
+          </div>
+        </div>
 
-    <h2>👷 Dead Tiny Projects</h2>
-    <ul>
-      <li><a href="https://www.watson.ch/!329355872">DNSzensur</a></li>
-      <li><a href="https://web.archive.org/web/20171022202658/https://ueberwacht.ch/">ueberwacht.ch</a></li>
-    </ul>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTohp8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTohp8" aria-expanded="false" aria-controls="collapseTohp8">
+              Keys
+            </button>
+          </h2>
+          <div id="collapseTohp8" class="accordion-collapse collapse" aria-labelledby="headingTohp8"
+            data-bs-parent="#accordionMain">
+            <div class="accordion-body">
+              <div class="d-grid gap-2 d-md-block">
+                <a rel="me" class="btn btn-primary" href="https://github.com/mritzmann.keys" role="button">SSH Public
+                  Key</a>
+                <a rel="me" class="btn btn-primary" href="https://github.com/mritzmann.gpg" role="button">PGP Public
+                  Key</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <h2>🙋 Memberships</h2>
-    <ul>
-      <li><a href="https://www.digitale-gesellschaft.ch/uber-uns/">Digital Society</a></li>
-      <li><a href="https://gletscher-initiative.ch/">Climate Protection</a></li>
-      <li><a href="https://www.paraplegie.ch/">Paraplegics Foundation</a></li>
-      <li><a href="https://www.umverkehr.ch/">umverkehR</a></li>
-    </ul>
+      <script src="assets/bootstrap.min.js?5.3.0-alpha1"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
 
-    <h2>🔑 Keys</h2>
-    <ul>
-      <li><a href="https://github.com/mritzmann.keys">SSH Public Key</a></li>
-      <li><a href="https://github.com/mritzmann.gpg">PGP Public Key</a></li>
-    </ul>
+    </div>
+  </main>
 
 </body>
 
