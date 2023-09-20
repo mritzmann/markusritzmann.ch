@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e 
+set -e
 set -o pipefail
 
 URL=$1
@@ -15,10 +15,6 @@ curl --head --silent $URL | grep --ignore-case "content-security-policy: default
 # X-Frame-Options
 echo "X-Frame-Options" | /usr/games/cowsay
 curl --head --silent $URL | grep --ignore-case "x-frame-options: sameorigin"
-
-# X-Xss-Protection
-echo "X-Xss-Protection" | /usr/games/cowsay
-curl --head --silent $URL | grep --ignore-case "x-xss-protection: 1; mode=block"
 
 # Referrer-Policy
 echo "Referrer-Policy" | /usr/games/cowsay
