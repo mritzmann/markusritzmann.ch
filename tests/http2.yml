@@ -1,0 +1,6 @@
+http2:
+  stage: test
+  image: alpine:latest
+  script:
+  - apk add curl grep
+  - curl --silent https://${FQDN}/ -o/dev/null -w '%{http_version}\n' | grep 2
