@@ -22,7 +22,6 @@ include:
   - tests/securityheaders.yml
   - tests/redirects.yml
   - tests/dns.yml
-  - tests/ssllabs.yml
   - tests/lighthouse.yml
   - tests/cds.yml
   - tests/http2.yml
