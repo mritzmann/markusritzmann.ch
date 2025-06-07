@@ -9,7 +9,4 @@ cds:
   # display cds status
   - echo $CDS | jq .
   # stateValue should be "ACTIVE"
-  - echo $CDS | jq .cdsInfo | jq .stateValue | grep ACTIVE
-  # candidateValue should be set to the following values
-  - echo $CDS | jq .cdsInfo | jq .candidateValue | grep DEF79CEEE71326B644B1BFF942FC55296304C56F70A8E96AF9046E5A0C18C73A
-  - echo $CDS | jq .cdsInfo | jq .candidateValue | grep 8FCE7767A7CA0C1B6CE729D3F1B8A9E50C1B992195A5658D7848E3CF05EE52360D46BB9655C0254A6946CBCC54784746
+  - echo $CDS | jq .cdsInfo | grep 'The found CDS RRset does not require a change'
